@@ -11,6 +11,5 @@
         public string? Synopsis { get; set; }
         public int? Year { get; set; }
         public TimeSpan? Duration { get; set; }
-        public string? Director { get; set; }
     }
 }

@@ -24,6 +24,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish  
+      if: github.ref == 'ref/head/main'
       uses: brandedoutcast/publish-nuget@v2.5.2  
       with:   
        PROJECT_FILE_PATH: FilmLibrary.Models/FilmLibrary.Models.csproj  
